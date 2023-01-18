@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>encriptador</h1>
+    <form>
+        <textarea id="texto-inicial" cols="100" rows="25" placeholder="ingresa el texto aqui">
+    
+        </textarea>
+
+        <textarea id="text-resultado" cols="80" rows="25"></textarea>
+        
+    </form>
+
+    <button type="button" onclick="remplazar()">Encriptar</button>
+
+   <button type="button">Desencriptar</button>  
+
+    <button type="button" class="copy">copiar</button>
+
+    <script>
+        
+        
+        
+        function remplazar(){
+            
+            var texto=document.getElementById("texto-inicial").value.toLowerCase();
+            var vocales=['a','e','i','o','u'];
+            var letras=['ai','enter','imes','ober','ufat'];
+            for(var caracter in vocales){
+                
+                for(var i in texto){
+                    if(texto[i] == vocales[caracter]){
+
+                        var result=texto.replaceAll(vocales[caracter],letras[caracter]);
+                        result=result.replaceAll(vocales[caracter],letras[caracter]);
+                            
+                        document.getElementById('text-resultado').innerText=result;
+                    } 
+                       
+                } 
+                     
+ 
+            }  
+            
+        }
+
+        
+               
+        
+    </script>
+    
+    
+    
+</body>
+</html>

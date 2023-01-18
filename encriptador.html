@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Encriptador De Texto</h1>
+        </header>
+ 
+   
+        <form class="text-area">
+            <textarea id="texto-inicial" cols="90" rows="23" placeholder="Ingresa el texto aqui"></textarea>
+    
+            <textarea id="text-resultado" cols="50" rows="23"></textarea>
+            
+        </form>
+
+        <p class="warning">! Ingresa solo letras en minuscula ¡</p>
+
+        <div>
+            <button type="button" class="remplazar" onclick="remplazar()">Encriptar</button>
+
+            <button type="button" class="decifrar" onclick="decifrar()">Desencriptar</button>  
+
+            <button type="button" class="copy" onclick="copy()">Copiar</button>
+        </div>
+
+        
+
+    </section>    
+    
+
+    </main>
+    
+
+    <script>
+        
+        
+       
+        function remplazar(){
+            var texto=document.getElementById("texto-inicial").value;
+
+            var resultado=texto.replace(/e/g,'enter');
+            var resultado=resultado.replace(/o/g,'ober');
+            var resultado=resultado.replace(/i/g,'imes');
+            var resultado=resultado.replace(/a/g,'ai');
+            var resultado=resultado.replace(/u/g,'ufat');
+
+            document.getElementById('text-resultado').innerText=resultado;
+        }
+        
+        function decifrar(){
+            var texto=document.getElementById("texto-inicial").value;
+
+            var result=texto.replace(/enter/g,'e');
+            var result=result.replace(/ober/g,'o');
+            var result=result.replace(/imes/g,'i');
+            var result=result.replace(/ai/g,'a');
+            var result=result.replace(/ufat/g,'u');
+
+            document.getElementById('text-resultado').innerText=result;
+        }
+        
+        function copy(){
+            var parrafo=document.querySelector("#text-resultado");
+            parrafo.select();
+            document.execCommand("copy");
+        }
+                 
+    </script>
+    
+    
+    
+</body>
+</html>
+

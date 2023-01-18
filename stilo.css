@@ -1,0 +1,77 @@
+body{
+    
+    background: url(imagenes/fondo1.jpg);
+}
+header h1{
+    text-align: center;
+    color: blanchedalmond;
+    background: linear-gradient(45deg, orange, green, blue , red);
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.text-area{
+    margin-left: 9%;
+    margin-bottom: 0%;
+}
+.warning{
+    width: 20%;
+    padding: 8px 0;
+    font-weight: bold;
+    background-color:rgb(213, 233, 35);
+    text-align: center;
+    margin-left: 120px;
+    box-shadow: -8px -8px  3px 2px;
+}
+.remplazar{
+    position: absolute;
+    width: 14%;
+    padding: 15px 0;
+    margin-left: 180px;
+    font-size: 12px;
+    font-weight: bold;
+    background: green;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.remplazar:hover{
+    background: rgb(30, 162, 202);
+    transform: scale(1.2);
+}
+.decifrar{
+    position: absolute;
+    width: 14%;
+    padding: 15px 0;
+    margin-left: 430px;
+    font-size: 12px;
+    font-weight: bold;
+    background: rgba(240, 23, 7, 0.877);
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.decifrar:hover{
+    background:rgb(235, 188, 34);
+    transform: scale(1.2);
+}
+
+.copy{
+    width: 14%;
+    padding: 15px 0;
+    margin-left: 880px;
+    font-size: 12px;
+    font-weight: bold;
+    background: orange;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.copy:hover{
+    background:rgb(30, 210, 54);
+    transform: scale(1.2); 
+}
+
+
